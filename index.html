@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JOKENPO</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>JOKENPO</h1>
+        <p id="makeChoice">Escolha uma opção:</p>
+        <div class="buttons">
+            <button onclick="humanChoice('rock')" id="rock">&#x1F44A;</button>
+            <button onclick="humanChoice('paper')" id="paper">&#x1F590;</button>
+            <button onclick="humanChoice('scissors')" id="scissors">&#x270c;</button>
+        </div>
+        <div class="result">
+            <p class="your-score">Sua pontuação: <span>0</span></p>
+            <p class="machine-score">Pontuação máquina: <span>0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
