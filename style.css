@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0%;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -13,8 +13,22 @@ body{
     align-items: center;
     min-height: 100vh;
 } 
-
 .container{
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.container h1{
+    font-size: 60px;
+    color: #1d1d1d;
+    text-align: top;
+    margin-bottom: 20px;
+    margin-top: 10; 
+}
+.box{
     font-family: 'Dingbats', sans-serif;
     font-weight: 900;
     color: #d6d6d6;
@@ -25,11 +39,12 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.container h1{
+.box h1{
+    color: #d6d6d6;
     font-size: 50px;
     margin-bottom: 20px;
 }
-.container p{
+.box p{
     font-size: 20px;
 }
 
@@ -54,4 +69,19 @@ button:hover{
     color: black;
     cursor: pointer;
     transition: 0.3s;
+}
+
+.result-text span,
+.jogada-humana,
+.jogada-computador {
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 1;
+}
+.fade-out {
+    opacity: 0;
+    transform: scale(0.8);
+}
+.fade-in {
+    opacity: 1;
+    transform: scale(1);
 }
