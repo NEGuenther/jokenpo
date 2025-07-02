@@ -85,3 +85,57 @@ button:hover{
     opacity: 1;
     transform: scale(1);
 }
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .box {
+        padding: 20px;
+    }
+    .container h1, .box h1 {
+        font-size: 36px;
+    }
+    .result {
+        font-size: 22px;
+    }
+    button {
+        font-size: 30px;
+        padding: 8px;
+    }
+    .jogada-humana,
+    .jogada-computador {
+        font-size: 50px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    .box {
+        padding: 10px;
+        width: 100%;
+    }
+    .container h1, .box h1 {
+        font-size: 24px;
+    }
+    .result {
+        font-size: 16px;
+    }
+    button {
+        font-size: 22px;
+        padding: 6px;
+    }
+    .jogada-humana,
+    .jogada-computador {
+        font-size: 32px !important;
+    }
+}
